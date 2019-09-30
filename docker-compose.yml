@@ -1,0 +1,6 @@
+version: '1'
+services:
+  counterservice:
+    build: counterservice
+    ports:
+      - "8180:8180"
