@@ -10,5 +10,6 @@
 
     <modules>
       <module>counterservice</module>
+      <module>configservice</module>
     </modules>
 </project>

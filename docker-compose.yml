@@ -2,5 +2,11 @@ version: '2'
 services:
   counterservice:
     build: counterservice
+    mem_limit: 512M
     ports:
       - "8180:8180"
+  configservice:
+    build: configservice
+    mem_limit: 512M
+    ports:
+      - "8170:8170"
