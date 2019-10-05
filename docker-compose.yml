@@ -1,5 +1,10 @@
 version: '2'
 services:
+  registryservice:
+    build: registryservice
+    mem_limit: 512M
+    ports:
+      - "8761:8761"
   configservice:
     build: configservice
     mem_limit: 512M
@@ -10,4 +15,3 @@ services:
     mem_limit: 512M
     ports:
       - "8181:8181"
-
