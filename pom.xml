@@ -6,10 +6,11 @@
     <artifactId>parent</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <description>Counter Service to test microservice</description>
+    <description>Composition to test microservice</description>
 
     <modules>
       <module>counterservice</module>
       <module>configservice</module>
+	    <module>registryservice</module>
     </modules>
 </project>
