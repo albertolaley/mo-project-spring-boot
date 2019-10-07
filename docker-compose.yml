@@ -12,7 +12,7 @@ services:
       - "8888:8888"
     environment:
       - JAVA_OPTS=
-         -DEUREKA_SERVER=http://172.17.0.1:8761/eureka
+         -DEUREKA_SERVER=http://registryservice:8761/eureka
   counterservice:
     build: counterservice
     mem_limit: 512M
