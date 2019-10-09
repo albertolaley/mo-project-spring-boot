@@ -18,3 +18,14 @@ services:
     mem_limit: 512M
     ports:
       - "8181:8181"
+  gatewayservice:
+    build: gatewayservice
+    mem_limit: 512M
+    ports:
+      - "9999:9999"
+    links:
+      - counterservice:counterservice
+      - registryservice:registryservice
+    depends_on:
+      - counterservice
+      - registryservice
