@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @RestController
 @RefreshScope
 public class CounterController {
-  private static AtomicLong count = new AtomicLong(0);
+  private static AtomicLong count = new AtomicLong(0L);
 
   @Value(value = "${counter.prefixMessage}")
   private String prefixMessage;
